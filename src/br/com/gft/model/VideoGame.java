@@ -29,6 +29,8 @@ public class VideoGame extends Produto implements Imposto {
 	public void setUsado(boolean isUsado) {
 		this.isUsado = isUsado;
 	}
+	public VideoGame(){
+	}
 	public VideoGame(String nome, double preco, int qtd, String marca, String modelo, boolean isUsado) {
 		super(nome, preco, qtd);
 		setMarca(marca);
@@ -36,7 +38,7 @@ public class VideoGame extends Produto implements Imposto {
 		setUsado(isUsado);
 	}
 	public String toString() {
-		return super.toString()+"\nVideo-game: " + getModelo()+"  Preço: " + getPreco()+"  Quantidade: "+getQtd()+" em estoque. ";
+		return super.toString()+"\nVideo-game: " + getModelo()+"  PreÃ§o: " + getPreco()+"  Quantidade: "+getQtd()+" em estoque. ";
 		
 	}
 	public double calculaImposto() {
