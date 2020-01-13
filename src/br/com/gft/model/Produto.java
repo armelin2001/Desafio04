@@ -21,6 +21,8 @@ public abstract class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
+	public Produto(){
+	}
 	public Produto(String nome, double preco, int qtd){
 		setNome(nome);
 		setPreco(preco);
